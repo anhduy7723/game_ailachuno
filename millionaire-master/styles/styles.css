@@ -1,0 +1,402 @@
+body {
+    background-image: url("../images/bg.jpg");
+    background-size: cover; /* Đảm bảo ảnh nền hiển thị đầy đủ trên toàn bộ trang */
+
+    margin: 0 auto;
+    padding: 0;
+    font-family: Ubuntu,"Helvetica Neue",Helvetica,Helvetica,Arial,sans-serif;
+ }
+ 
+ html {
+    
+     background-size: cover; /* Đảm bảo ảnh nền hiển thị đầy đủ trên toàn bộ trang */
+     margin: 0 auto;
+     padding: 0;
+     font-family: Ubuntu,"Helvetica Neue",Helvetica,Helvetica,Arial,sans-serif;
+ }
+.container {
+    background-color: rgb(54, 7, 184);
+    border-left: 8px solid rgb(65, 81, 226);
+    border-right: 8px solid rgb(3, 14, 116);
+    border-bottom: 8px solid rgb(65, 81, 226);
+    border-top: 8px solid rgb(3, 14, 116);
+    border-radius: 5px;
+}
+
+.countdown-wrapper {
+    position: relative;
+  }
+  
+  .countdown {
+    position: absolute;
+    bottom: 98%;
+    left: -40px;
+    font-size: 24px;
+    color: white;
+  }
+  
+  #logo {
+    width: 300px; /* Đặt giá trị width là 250px */
+    height: 300px; /* Đặt giá trị height là 150px */
+}
+
+#game{
+    display: none;
+    width: 70%;
+    flex: 1;
+    padding: 0.5rem 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-top: 35px;
+   
+    border-radius: 5px;
+}
+
+.wel-main{
+    background-color: rgb(54, 7, 184);
+    text-align: center;
+}
+
+.wel-main p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: rgb(223, 194, 157);
+}
+
+.main-buttons {
+    text-align: center;
+}
+
+.main-buttons button {
+    width: 110px;
+    color: rgb(250, 121, 0);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.main-buttons button:hover{
+    background-color: yellow;
+}
+#start_or_noStart {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    background-color: rgb(151, 36, 42);
+    border-radius: 10px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%); /* Center the div horizontally */
+    top: calc(300px - 100px); /* Adjust this value to position it below the countdown */
+    border: 5px solid rgb(17, 37, 37);
+  }
+#start_or_noStart div{
+    margin:10px;
+}
+
+#start_or_noStart div button{
+    background-color:tomato;
+    color:white;
+    width:100px;
+    height:30px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.title_start_or_noStart {
+    color: white;
+    font-weight: bold;
+    font-size: 24px; /* Điều chỉnh kích thước font thành 24px hoặc giá trị mong muốn */
+    text-align: center; /* Căn giữa nội dung tiêu đề */
+}
+.start_or_no{
+    position: relative;
+    top: 20px;
+}
+
+.about p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(223, 194, 157);
+}
+
+.about a{
+    color: rgb(180, 174, 154);
+}
+
+.main{
+    display: flex;
+}
+
+.name {
+    text-align: center;
+  
+    font-family: Algerian;
+}
+
+.display {
+    height: 255px;
+    background-color: rgb(17, 17, 138);
+    margin: 14px;
+    border: 4px solid rgb(65, 81, 226);
+    border-radius: 10px;
+}
+
+.display .question{
+    font-weight: normal;
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(243, 236, 221);
+}
+
+.options{
+    margin: 14px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.A, .B, .C, .D {
+    background-color: rgb(17, 17, 138);
+    color: rgb(250, 121, 0);
+    padding: 8px;
+    border: 4px solid rgb(65, 81, 226);
+    border-radius: 10px;
+    width: 320px;
+    margin-top: 10px;
+}
+
+.options div:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.que-ans {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.aside{
+    flex: 0;
+    background-color: rgb(17, 17, 138);
+    margin: 14px;
+    margin-bottom: 23px;
+    width: 140px;
+    border: 4px solid rgb(65, 81, 226);
+    border-radius: 5px;
+}
+
+.aside button{
+    display: block;
+    color: rgb(250, 121, 0);
+    background-color: rgb(17, 17, 138);
+    font-weight: bold;
+    width: 140px;
+}
+
+.stages .current{
+    background-color: rgb(250, 121, 0);
+    color: black;
+}
+
+.score{
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.life-line img{
+    width: 43px;
+    display: inline;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+.developer{
+    text-align: center;
+    background-color: rgb(3, 14, 116);
+}
+
+.developer p {
+    color: rgb(180, 174, 154);
+    font-size: 15px;
+    padding: 3px;
+}
+
+.developer p a{
+    color: rgb(180, 174, 154);
+}
+
+.score{
+    text-align: center;
+}
+
+.score span,p{
+    font-size: 13px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.score p{
+    display: inline;
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background:rgba(12, 12, 12, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.audience-wrapper, .right-wrapper, .chat-wrapper, .wrong-wrapper, .right-wrapper, .warning{
+    background-color: rgb(2, 2, 250);
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    border: 5px solid rgb(3, 3, 85);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.audience-wrapper, .chat-wrapper {
+    height: 180px;
+}
+
+.chat-wrapper p, .right-wrapper p, .wrong-wrapper p, .warning p{
+    font-size: 18px;
+}
+
+.warning button{
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: rgb(3, 3, 85);
+    color: rgb(243, 236, 221);
+}
+
+.warning button:hover{
+    background-color: rgb(250, 121, 0);
+}
+
+/**
+*{
+    box-sizing: border-box;
+}
+**/
+
+.bar{
+    width: 300px;
+}
+
+.bar .bar-item-container{
+    width: 100%;
+}
+
+.bar-item-container div{
+    text-align: right;
+    background-color: burlywood;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.close{
+    text-align: center;
+}
+
+.close button{
+    cursor: pointer;
+    background: rgb(250, 121, 0);
+    color: white;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+
+.aud .audOpt{
+    display: inline;
+}
+
+@media only screen and (max-width: 950px) {
+    .A, .B, .C, .D {
+        width: 100%;
+    }
+
+    .A, .B, .C, .D, .display .question {
+        font-size: 15px;
+    }
+
+    .name h1 {
+        font-size: 18px;
+    }
+    
+    img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .display {
+        margin: 10px;
+    }
+    
+    .display .question{
+        padding: 11px;
+    }
+    
+    .options{
+        margin: 10px;
+    }
+
+    .aside{
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .A, .B, .C, .D {
+        width: 100%;
+    }
+
+    .A, .B, .C, .D, .display .question {
+        font-size: 12px;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
